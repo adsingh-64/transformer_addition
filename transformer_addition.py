@@ -211,5 +211,5 @@ accuracy = count / 10000
 print(f"Accuracy is {accuracy:.2f}")
 
 """
-Training on 1x A100 GPU for 10 minutes achieves 99.9% accuracy
+Training on 1x A100 GPU for 10 minutes achieves 99.9% accuracy.
 """
