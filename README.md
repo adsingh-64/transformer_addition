@@ -5,8 +5,8 @@ The transformer is a vanilla decoder-only transformer -- the main difficulty in
 building this model was presenting the data. We want the transformer to learn 
 the right to left addition algorithm that one is taught in grade school. Hence,
 for the task of 3-addition, we use a maximum context size of 6 tokens, and feed 
-in the addition of two numbers as 
-<ones place> <ones place>, <tens place> <tens place>, <hundreds place> <hundreds place>.
+in the addition of two numbers in a consistent manner with the right to left
+algorithm.
 
 For example, the problem 723 + 599 is fed in to the transformer as 
 [3, 9, 2, 9, 7, 5]. The label for [3, 9] is [2], the label for [2, 9] is [2] (carryover),
